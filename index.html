@@ -3,60 +3,25 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>null-sensei</title>
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      background: #0a0a0a;
-      color: #e0e0e0;
-      font-family: 'Courier New', monospace;
-      height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      overflow: hidden;
-    }
-
-    .container {
-      text-align: center;
-    }
-
-    h1 {
-      font-size: clamp(3rem, 10vw, 8rem);
-      font-weight: 100;
-      letter-spacing: 0.2em;
-      color: #fff;
-      opacity: 0;
-      animation: fadeIn 2s ease forwards;
-    }
-
-    .cursor {
-      display: inline-block;
-      width: 0.08em;
-      height: 1em;
-      background: #fff;
-      margin-left: 0.1em;
-      vertical-align: middle;
-      animation: blink 1s step-end infinite;
-    }
-
-    @keyframes fadeIn {
-      to { opacity: 1; }
-    }
-
-    @keyframes blink {
-      50% { opacity: 0; }
-    }
-  </style>
+  <title>Null-sensei</title>
+  <link rel="stylesheet" href="/style.css">
 </head>
 <body>
-  <div class="container">
-    <h1>null-sensei<span class="cursor"></span></h1>
-  </div>
+  <header>
+    <a href="/" class="logo">Null-sensei</a>
+    <nav>
+      <a href="/news/">News</a>
+      <a href="/blog/">Blog</a>
+    </nav>
+  </header>
+
+  <main class="hero">
+    <h1>Null-sensei<span class="cursor"></span></h1>
+    <p class="tagline">AI × Human × Future</p>
+  </main>
+
+  <footer>
+    <p>by <a href="https://x.com/GOROman" target="_blank">@GOROman</a> &amp; <a href="https://x.com/naruevi" target="_blank">ナルエビ🦐</a></p>
+  </footer>
 </body>
 </html>
